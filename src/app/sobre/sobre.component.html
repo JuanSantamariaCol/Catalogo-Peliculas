@@ -1,0 +1,23 @@
+<div class=" container-xxl" >
+    <h1 class="  fw-bold font_titles text-center mt-2">{{dataMovie.title}}</h1>
+        <div class="d-flex media m-4">
+            <div class="cont-img-cards">
+                <div>
+                    <img  class="img-cover" src="https://image.tmdb.org/t/p/w500/{{dataMovie.poster_path}}" alt="">
+                </div>
+            </div>
+            <div class=" container-sm align-self-center ">
+                <h3 class = "text-center justify-content-start font_titles fw-bold  ">Descripción</h3>
+                <p class=" ml-4 descrip-letters text-justify">{{dataMovie.overview}}</p>
+                <p class=" ml-4 descrip-letters text-justify">Fecha de estreno: {{dataMovie.release_date}}</p>
+                <p class=" ml-4 descrip-letters text-justify">Producida por: {{dataMovie.production_companies[0].name}}<p>
+                <p class=" ml-4 descrip-letters text-justify ">Generos: {{dataMovie.genres[0].name}},
+                    {{dataMovie.genres[1].name}}
+                </p>
+                <p class="ml-4 descrip-letters text-justify">Puntaje: {{dataMovie.vote_average}} estrellas</p>
+                <p class="ml-4 descrip-letters text-justify">Votos: {{dataMovie.vote_count}}</p>
+
+
+            </div>
+    </div>  
+</div>

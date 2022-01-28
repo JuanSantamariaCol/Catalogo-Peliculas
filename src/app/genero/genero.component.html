@@ -1,0 +1,21 @@
+<div>
+    <h1 class="text-center ">Catalogo</h1>
+    <h2 class="text-center">Peliculas de {{nameGender}}</h2>
+</div>
+<div class="  container-gl d-flex flex-wrap justify-content-center">
+    <button  routerLink="/sobre" (click)= "passId(movie.id)" class="button-movie m-3" style="border-radius: 0;" *ngFor= "let movie of movies" href="#">
+        <div class="card-container " style="background-image: url(https://image.tmdb.org/t/p/w500/{{movie.poster_path}}); background-size: cover; ">
+            <div class="content">
+                <div class="card-text-container m-3">
+                    <h4 class="text-start tf-bold text-white">{{movie.title}}</h4>
+                    <p class="text-start text-white fs-6 text-wrap "> {{movie.overview}}</p>
+                    
+                </div>
+            </div>
+            
+            
+        </div>
+        
+    </button>
+    
+</div>

@@ -1,0 +1,32 @@
+<!-- Header NavBar-->
+<nav class="navbar navbar-expand-xl pt-0 pl-1 pb-0 navbar-dark bg-dark sticky-lg-top">
+    <div class="container-fluid">  
+        <a  class="navbar-brand text-ligth title-header fw-bold" href="#">
+            <img class="img-header navbar-brand align-text-center " src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/50/ffffff/external-movie-news-kiranshastry-solid-kiranshastry.png"/>
+            Movie Time
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu options -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="generosDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Generos
+                    </a>
+                    <div class="dropdown-menu"  aria-labelledby="generosDropdown">
+                        <a class="dropdown-item" (click)="movieGender(gender.id,gender.name)" *ngFor ="let gender of genders;" routerLink="/genero">{{gender.name}}</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="/insertar" class="nav-link" href="#">Nueva Pelicula</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

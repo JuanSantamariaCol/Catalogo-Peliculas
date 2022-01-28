@@ -1,0 +1,22 @@
+.cont-img-cards{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.font_titles{
+    font-size: 250%;
+}
+.no-space{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+@media (max-width: 1205px) {
+    .img-cover{
+        max-width:100%;
+    }
+    .media{
+        flex-wrap: wrap;
+    }
+}
